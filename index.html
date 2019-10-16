@@ -5,11 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mi primera Pagina web</title>
+
+
+    <style>
+        /*HEADER */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        header{
+            background-color: blue;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 20px ;
+            padding-bottom: 20px ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+        }
+        header .logo{
+
+        }
+        header a {
+            color: white;
+
+        }
+        header ul{
+            display: flex;
+            justify-content: center;
+            align-items: none;
+        }
+        /*MAIN */
+        main {
+            background-color: grey;
+            padding: 20px;
+            color :white;
+        }
+         /*FOOTER */
+         footer{
+            background-color: blue;
+            padding: 20px;
+            color :white;
+         }
+    </style>
   </head>
   <body>
     <div>
       <!--HEADER-->
       <header>
+            <a class="logo"    href="">LOGO</a>
         <ul>
           <li>
             <a href="">inicio</a>
@@ -92,13 +139,21 @@
             architecto magni repellendus impedit debitis obcaecati, harum
             repudiandae tempore atque eos optio corporis hic!
           </p>
-          <figure>
-            <img src="./imagenes/descarga.jpg" alt="" />
-          </figure>
+          <form action="">
+             <input type="text" placeholder="nombre" />
+             <input type="text" placeholder="apellido" />
+             <input type="text" placeholder="telefono" />
+             <input type="text" placeholder="e-mail" /> <br/>
+             <textarea  cols="100" rows="10"></textarea>
+             <button>Enviar</button>
+          </form>
+
         </section>
       </main>
       <!--FOOTER-->
-      <footer></footer>
+      <footer>
+          <p> todos los derechos reservados CODIGO</p>
+      </footer>
     </div>
   </body>
 </html>

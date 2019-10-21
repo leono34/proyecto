@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="desccription"  content="tabla forulario nueva pagina web hacer una pagina web"/>
+    <meta name="keywords"  content="tabla, forulario, nueva, pagina web, hacer una pagina web"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mi primera Pagina web</title>
-
-
+    <link rel="shortcut icon" href="/imagenes/favicon.ico" type="image/x-icon">
     <style>
         /*HEADER */
         body {
@@ -15,28 +16,30 @@
         }
         header{
             background-color: blue;
-            padding-top: 20px;
-            padding-right: 20px;
-            padding-left: 20px ;
-            padding-bottom: 20px ;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        a{
+        .menu ul{
+           margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .menu  li{
             text-decoration: none;
-        }
-        header .logo{
-
-        }
-        header a {
-            color: white;
-
-        }
-        header ul{
             display: flex;
             justify-content: center;
             align-items: none;
+        }
+        .menu li:hover{
+          background: rgba(0,0, 0,0.3);
+        }
+        .menu li a{
+          color: white;
+          display: black;
+          text-decoration: none;
+          padding:  15px;
         }
         /*MAIN */
         main {
@@ -57,6 +60,7 @@
       <!--HEADER-->
       <header>
             <a class="logo"    href="">LOGO</a>
+        <nav class="menu">
         <ul>
           <li>
             <a href="">inicio</a>
@@ -71,21 +75,25 @@
             <a href="">Contacto</a>
           </li>
         </ul>
+      </nav>
       </header>
-      <!--MAIN-->
-      <main>
+        <!--MAIN-->
+         <main>
         <!--inicio-->
         <section>
           <h2>inicio</h2>
           <hr />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-            temporibus nemo tenetur praesentium perspiciatis doloremque unde
-            architecto magni repellendus impedit debitis obcaecati, harum
-            repudiandae tempore atque eos optio corporis hic!
+            <cite>Manuel Leon Arias Montes</cite>
+            <blockquote>
+              <b> Lorem ipsum dolor sit amet consectetur</b> adipisicing elit. A
+               <strong> temporibus nemo tenetur</strong> praesentium perspiciatis <i>doloremque</i>  unde
+               architecto magni repellendus impedit debitis <span> obcaecati, harum</span>
+               repudiandae tempore atque eos optio corporis hic!
+            </blockquote>
           </p>
           <figure>
-            <img src="./imagenes/descarga.jpg" alt="" />
+            <img src="./imagenes/descarga.jpg" title="hecho por leon" alt="" />
           </figure>
         </section>
         <!--quienes somos-->
@@ -93,13 +101,16 @@
           <h2>Quienes somos</h2>
           <hr />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-            temporibus nemo tenetur praesentium perspiciatis doloremque unde
-            architecto magni repellendus impedit debitis obcaecati, harum
-            repudiandae tempore atque eos optio corporis hic!
+              <cite>Manuel Leon Arias Montes</cite>
+              <blockquote>
+                <b> Lorem ipsum dolor sit amet consectetur</b> adipisicing elit. A
+                 <strong> temporibus nemo tenetur</strong> praesentium perspiciatis <i>doloremque</i>  unde
+                 architecto magni repellendus impedit debitis <span> obcaecati, harum</span>
+                 repudiandae tempore atque eos optio corporis hic!
+              </blockquote>
           </p>
           <figure>
-            <img src="./imagenes/grupo.png" width="500px" height="300px" alt="" />
+            <img src="./imagenes/grupo.png"title="hecho por leon" width="500px" height="300px" alt="" />
           </figure>
         </section>
         <!--portafolio-->
@@ -107,25 +118,28 @@
           <h2>Portafolio</h2>
           <hr />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-            temporibus nemo tenetur praesentium perspiciatis doloremque unde
-            architecto magni repellendus impedit debitis obcaecati, harum
-            repudiandae tempore atque eos optio corporis hic!
+              <cite>Manuel Leon Arias Montes</cite>
+              <blockquote>
+                <b> Lorem ipsum dolor sit amet consectetur</b> adipisicing elit. A
+                 <strong> temporibus nemo tenetur</strong> praesentium perspiciatis <i>doloremque</i>  unde
+                 architecto magni repellendus impedit debitis <span> obcaecati, harum</span>
+                 repudiandae tempore atque eos optio corporis hic!
+              </blockquote>    
           </p>
             <figure>
-                <img src="./imagenes/perro.jpg" width="300px" height="170px" alt="" />
+                <img src="./imagenes/perro.jpg"title="hecho por leon" width="300px" height="170px" alt="" />
                 <figcaption>servicio 1</figcaption>
              </figure>
             <figure>
-                <img src="./imagenes/arte.jpg"width="300px" height="170px" alt="">
+                <img src="./imagenes/arte.jpg"title="hecho por leon"width="300px" height="170px" alt="">
                 <figcaption>servicio 2</figcaption>
             </figure>
             <figure>
-                <img src="./imagenes/tortuga.jpg"width="300px" height="170px" alt="">
+                <img src="./imagenes/tortuga.jpg" title="hecho por leon" width="300px" height="170px" alt="">
                 <figcaption>servicio 3</figcaption>
             </figure>
             <figure>
-                <img src="./imagenes/urbano.jpg" width="300px" height="170px"alt="">
+                <img src="./imagenes/urbano.jpg" title="hecho por leon" width="300px" height="170px"alt="">
                 <figcaption>servicio 4</figcaption>
             </figure>
         </section>
@@ -134,17 +148,20 @@
           <h2>Contacto</h2>
           <hr />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-            temporibus nemo tenetur praesentium perspiciatis doloremque unde
-            architecto magni repellendus impedit debitis obcaecati, harum
-            repudiandae tempore atque eos optio corporis hic!
+              <cite>Manuel Leon Arias Montes</cite>
+              <blockquote>
+                <b> Lorem ipsum dolor sit amet consectetur</b> adipisicing elit. A
+                 <strong> temporibus nemo tenetur</strong> praesentium perspiciatis <i>doloremque</i>  unde
+                 architecto magni repellendus impedit debitis <span> obcaecati, harum</span>
+                 repudiandae tempore atque eos optio corporis hic!
+              </blockquote>
           </p>
           <form action="">
              <input type="text" placeholder="nombre" />
              <input type="text" placeholder="apellido" />
              <input type="text" placeholder="telefono" />
              <input type="text" placeholder="e-mail" /> <br/>
-             <textarea  cols="100" rows="10"></textarea>
+             <textarea  cols="100" rows="10"></textarea> <br>
              <button>Enviar</button>
           </form>
 
@@ -152,7 +169,7 @@
       </main>
       <!--FOOTER-->
       <footer>
-          <p> todos los derechos reservados CODIGO</p>
+          <p> <i> todos los derechos reservados CODIGO</i></p>
       </footer>
     </div>
   </body>
